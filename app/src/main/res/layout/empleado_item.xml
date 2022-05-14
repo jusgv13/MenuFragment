@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingTop="16dp"
+    android:paddingRight="8dp"
+    android:paddingLeft="16dp"
+    >
+
+
+    //Items de la lista
+
+    <ImageView
+        android:id="@+id/empleado_imagen"
+        android:layout_width="61dp"
+        android:layout_height="65dp" />
+
+    <TextView
+        android:id="@+id/Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        tools:text="Justin González Vega"
+        android:layout_toEndOf="@+id/empleado_imagen"
+        />
+
+    <TextView
+        android:id="@+id/empleado_puesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/empleado_imagen"
+        android:layout_below="@+id/Nombre"
+        tools:text="Programador"
+        />
+
+</RelativeLayout>
